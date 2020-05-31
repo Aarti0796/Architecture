@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<section id="login" style="background-image:url(@Url.Content("~/images/login.jpg"))">
+    <div class="container">
+        <div class="loginForm d-flex justify-content-center align-items-center">
+            <div class="form">
+
+                <div class="heading justify-content-center d-flex"><h3>Login</h3></div>
+                <div>
+                    <label>Username:</label>
+                    <input type="text" name="Username" placeholder="Enter Username" class="form-control"/>
+                </div>
+                <div>
+                    <label> Password:</label>
+                    <input type="password" name="pwd" placeholder="Enter password" class="form-control" />
+                </div>
+                <div class="sbtn">
+                    <button class="btn btn-primary" type="submit" >Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

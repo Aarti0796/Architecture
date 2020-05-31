@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>@ViewBag.Title</title>
+    <link href="~/images/favicon.jpg" rel="shortcut icon" type="image/x-icon" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    @Styles.Render("~/Content/css")
+    <link href="~/Content/style.css" rel="stylesheet" />
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="header-wrap d-flex justify-content-between">
+                <div class="navbar-brand">
+                    <div class="logo p-3">
+                        <a href="#"><img src="~/images/logo1.png" /></a>
+                    </div>
+                </div>
+                <nav class="navbar navbar-expand-lg navbar-light">
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="@Url.Action("", "Home")">Home</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Services">Service</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact-form">Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#portfolio">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#blog">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#TabStructure">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#partner">Our Team</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="@Url.Action("Index","Login")">Login</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+                <div class="social-icon p-3 ">
+                    <div class="social-media text-black">
+                        <i class="fa fa-facebook p-3" aria-hidden="true"></i>
+                        <i class="fa fa-linkedin p-3" aria-hidden="true"></i>
+                        <i class="fa fa-instagram p-3" aria-hidden="true"></i>
+                        <i class="fa fa-pinterest-p p-3" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </header>
+    @RenderBody()
+    <footer>
+        <div class="footer-wrap">
+            <div class="container ">
+                <div class="address d-md-flex justify-content-between p-3">
+
+                    <div class="logo add">
+                        <a href="#"><img class="logo pb-3" src="~/images/logo.png"></a>
+                        <div class="summary">
+                            <p>Keep away from people who try to belittle your ambitions Small people always do that but the really great Friendly.</p>
+                        </div>
+                        <div class="address ">
+                            <span class="d-table-cell align-middle"><i class="fas fa-mobile-alt"></i></span>
+                            <p class="d-table-cell align-middle bottom0">
+                                +01 - 123 - 4567 <a class="d-block" href="mailto:web@support.com">web@support.com</a>
+                            </p>
+                        </div>
+                        <div class="social-icon wow fadeInUp">
+                            <a href="#">
+                                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                            </a>
+
+                            <a href="#">
+                                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    @*<div class="latest-news add">
+                        <div class="news justify-content-between">
+                            <h3>Latest News</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">Aenean tristique justo et... </a>
+
+                                </li>
+                                <span class="date">15 March 2019</span>
+                                <hr>
+                                <li>
+                                    <a href="#">Aenean tristique justo et... </a>
+                                </li>
+                                <span class="date">15 March 2019</span>
+                                <hr>
+                                <li>
+                                    <a href="#">Aenean tristique justo et... </a>
+                                </li>
+                                <span class="date">15 March 2019</span>
+                            </ul>
+                        </div>
+                    </div>*@
+                    <div class="navigation add">
+                        <h3>Navigation</h3>
+                        <div class="latest-link">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Portfolio</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Project</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bussiness add">
+                        <div class="hour">
+                            <h3>Bussiness Hours</h3>
+                            <p>Our support available to help you 24 hours a day, seven days week</p>
+                        </div>
+                        <div class="time">
+                            <li>
+                                <span>Monday-Saturday:</span>
+                                <span>8.00-18.00</span>
+                            </li>
+                            <li>
+                                <span>Friday:</span>
+                                <span>09:00-21:00</span>
+                            </li>
+                            <li>
+                                <span> Sunday:</span>
+                                <span>09:00-20:00</span>
+                            </li>
+                            <li>
+                                <span>Calendar Events:</span>
+                                <span>24-Hour Shift</span>
+                            </li>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    @Scripts.Render("~/bundles/script")
+@Scripts.Render("~/bundles/jqueryVal")
+@Scripts.Render("~/bundles/jqueryajax")
+@Scripts.Render("~/bundles/custom")
+@RenderSection("scripts", required: false)
+</body>
+</html>
